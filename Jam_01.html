@@ -95,7 +95,7 @@
 
 function dispalyGreetings(today){
         hrs = today.getHours();
-        name=""
+        name=", Mas Andri"
         if (hrs < 12)
             greet = 'Selamat Pagi'+name;
         else if (hrs >= 12 && hrs <= 17)
@@ -108,16 +108,16 @@ function dispalyGreetings(today){
 
     function dispalyDate(today) {  
        
-        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
+        const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni",
+  "Juli", "Agustus", "September", "Oktober", "November", "Desember"
 ];
 
         var dayName = days[today.getDay()];
         var monthName = monthNames[today.getMonth()];
         var date = today.getDate();
         var year = today.getFullYear();
-        document.getElementById('date').innerHTML =dayName+", "+monthName+" "+date+" "+year;
+        document.getElementById('date').innerHTML =dayName+", "+date+" "+monthName+" "+year;
 
     }
 
